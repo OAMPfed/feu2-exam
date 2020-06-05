@@ -1,0 +1,40 @@
+.pageHomepage{
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 40px;
+    padding: 20px;
+    &__title{
+        font-size: 30px;
+        color: $primary-font;
+    }
+    &__image{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 65%;
+        color: $primary-font;
+        border-radius: 5px;
+        border: 1px solid white;
+        box-shadow: -5px -5px 16px $light-shadow, 5px 5px 16px $dark-shadow;
+    }
+    &__figcaption{
+        font-size: 14px;
+        width: 100%;
+        text-align: right;
+        margin-bottom: 10px;
+        color: $primary-font;
+    }
+    &__text{
+        color: $primary-font;
+        &--link{
+            list-style: none;
+            font-size: $primary-font;
+            font-weight: bold;
+            text-decoration: none;
+            color: $primary-font;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

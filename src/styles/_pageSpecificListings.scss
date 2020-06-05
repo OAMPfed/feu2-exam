@@ -1,0 +1,28 @@
+.pageSpecificListings{
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    &__img{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+    &__info{
+        padding: 10px 20px;
+        &--text{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+    }
+    &__card{
+        margin-top: 20px;
+    }
+    &__button{
+        margin: 20px;
+    }
+}

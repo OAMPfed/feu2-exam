@@ -1,0 +1,61 @@
+//General styling for modals
+.componentModalBg{
+    position: fixed;
+    z-index: 99;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    &__button{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid white;
+        position: relative;
+        margin-left: auto;
+        margin-right: 20px;
+        border-radius: 50%;
+        box-shadow: -5px -5px 16px $light-shadow, 5px 5px 16px $dark-shadow;
+        &:hover{
+            cursor: pointer;
+            box-shadow: inset -3px -3px 3px $light-shadow, inset 3px 3px 3px $dark-shadow;
+        }
+    }
+}
+
+//Enquiry modal
+.componentEnquiryModal{
+    background-color: $primary-bg;
+    width: 300px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: center;
+    &__text{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+//Login modal
+.componentLoginModal{
+    background-color: $primary-bg;
+    min-width: 300px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 5px;
+    &__text{
+        width: 100%;
+        text-align: center;
+    }
+}

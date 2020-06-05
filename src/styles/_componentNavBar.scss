@@ -1,0 +1,123 @@
+.componentNavbar{
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px !important;
+    margin-top: 15px;
+    height: 60px;
+    @include mobile{
+        width: 90%;
+        justify-content: space-around;
+    }
+    &__brand{
+        display: flex;
+        align-items: center;
+        &--logoImg{
+            margin-right: 10px;
+            height: 60px;
+        }
+        &--logoName{
+            font-size: 40px;
+            font-weight: bold;
+            color: $primary-font;
+        }
+    }
+    &__links{
+        display: flex;
+        align-items: center;
+        &--link{
+            list-style: none;
+            margin-right: 20px;
+            font-size: $primary-font;
+            font-weight: bold;
+            a{
+                text-decoration: none;
+                color: $primary-font;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        &--button{
+            background-color: $primary-font;
+            color: white;
+            font-weight: bold;
+            border: solid 1px white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                cursor: pointer;
+                box-shadow: inset -3px -3px 3px rgba(0,0,0, 0.5), inset 3px 3px 3px rgba(0,0,0, 0.5);
+            }
+            padding: 5px 20px;
+        }
+    }
+}
+
+.links{
+    &-desktop{
+        @include mobile{
+            display: none;
+        }
+    }
+    &-mobile{
+        display: none;
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            background-color: $primary-bg;
+            justify-content: center;
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+.componentNavbar__links--link{
+    @include mobile{
+        margin-bottom: 20px;
+        color: $primary-font;
+        a{
+            font-size: 40px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.componentNavbar__links--button{
+    color: white !important;
+    @include mobile{
+        padding: 10px 40px;
+        font-size: 20px; 
+    }
+}
+.componentNavbar__hamburger{
+    display: none;
+    @include mobile{
+        position: fixed;
+        right: 40px;
+        bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary-font;
+        border: none;
+        border-radius: 50%;
+        padding: 10px;
+    }
+}
+.mobileNavbarBrandDisabled{
+    display: none !important;
+    @include mobile{
+        display: flex;
+    }
+}
+.mobileNavbarDisabled{
+    display: none;
+}

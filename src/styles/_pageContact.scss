@@ -1,0 +1,57 @@
+.pageContact{
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 40px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    &__title{
+        font-size: 30px;
+        color: $primary-font;
+    }
+    &__infoWrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 90%;
+        max-width: 1000px;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    &__infoCard{
+        width: 100%;
+        max-width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include mobile{
+            margin-right: 0px;
+            margin-bottom: 20px;
+            padding: 20px;
+            max-width: 100%;
+        }
+        &--info{
+            list-style-type: none;
+        }
+        &--img{
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-left: 10px;
+            margin-top: 20px;
+            box-shadow: -5px -5px 16px $light-shadow, 5px 5px 16px $dark-shadow;
+            @include mobile{
+                margin-top: 20px;
+                margin-left: 0px;
+            }
+        }
+    }
+    &__contact{
+        width: 90%;
+        max-width: 1000px;
+        &--title{
+            font-weight: bold;
+        }
+    }
+}

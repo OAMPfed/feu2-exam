@@ -1,0 +1,61 @@
+.pageListings{
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 20px;
+    padding: 20px;
+    &__title{
+        font-size: 30px;
+        color: $primary-font;
+    }
+    &__text{
+        color: $primary-font;
+    }
+    &__search{
+        display: flex;
+        flex-wrap: none;
+        justify-content: center;
+        align-items: center;
+        @include mobile{
+            flex-wrap: wrap;
+        }
+        &--bar{
+            width: 90%;
+            @include mobile{
+                width: 100%;
+            }
+        }
+        &--button{
+            margin-left: 10px;
+            width: 100px;
+        }
+    }
+    &__card{
+        display: flex;
+        max-width: 300px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        &--img{
+            width: 40%;
+            object-fit: cover;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        &--info{
+            padding: 20px 10px;
+            a{
+                word-break: break-all;
+            }
+        }
+    }
+}
+
+.pageListings__listingsWrapper{
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

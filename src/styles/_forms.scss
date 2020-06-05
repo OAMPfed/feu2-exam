@@ -1,0 +1,32 @@
+form{
+    margin-top: 20px;
+}
+
+.form__input{
+    box-shadow: inset -3px -3px 3px $light-shadow, inset 3px 3px 3px $dark-shadow;
+    padding: 4px 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: $primary-bg;
+}
+.form__textarea{
+    box-shadow: inset -3px -3px 3px $light-shadow, inset 3px 3px 3px $dark-shadow;
+    padding: 4px 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 150px;
+    resize: none;
+    background-color: $primary-bg;
+}
+.form__button{
+    border: 1px solid white;
+    background-color: $primary-bg;
+    padding: 4px 20px;
+    box-shadow: -5px -5px 16px $light-shadow, 5px 5px 16px $dark-shadow;
+    &:hover{
+        cursor: pointer;
+        box-shadow: inset -3px -3px 3px $light-shadow, inset 3px 3px 3px $dark-shadow;
+    }
+}
